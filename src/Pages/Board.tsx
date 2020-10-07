@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../Components/Header';
+import BoardTitle from '../images/about_board.svg'
 import Footer from '../Components/Footer';
-import {Typography, Box, Grid} from '@material-ui/core';
+import {Typography, Box, Grid, Button} from '@material-ui/core';
 import john from '../images/board/john.jpg';
 import alan from '../images/board/alan.png';
 import joel from '../images/board/joel.jpg';
@@ -29,7 +30,7 @@ export default function Board() {
       </Box>
 
       <Box style={{marginLeft:"10%", marginRight:"10%", marginBottom:"7%"}}>
-        <Typography variant="h4" style={{letterSpacing:"5px", paddingBottom:"2%", borderBottom:"1px solid #aab8c4"}}> 2020 - 2021 </Typography>
+        <Typography variant="h4" style={{letterSpacing:"5px", paddingLeft:"5%", borderLeft:"8px solid #aab8c4"}}> 2020 - 2021 </Typography>
       </Box>
 
       <Box className="flipContainer">

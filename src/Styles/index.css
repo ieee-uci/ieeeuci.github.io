@@ -196,18 +196,27 @@ input[type=text]{
     width:5vw;
 }
 
+.submit{
+  background-image: linear-gradient(to right, #1CB5E0, #2A6AC6);
+  margin-top: 25px;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-size: 1.2vw; 
+  text-align: center;
+  filter: drop-shadow(2px 2px 4px rgba(33,32,40,.5));
+}
 
 .submit:hover{
-  background-color: black;
-  color: white;
+  filter: drop-shadow(4px 4px 8px rgba(33,32,40,.5));
 }
 
 .subscribeBox{
   position: absolute;
-  top: 22%;
-  margin-left: 65%;
-  margin-right: 5%;
-  font-size: 1.1vw;
+  top: 20%;
+  right:0%;
+  bottom:0%;
+  left: 60%;
+
 }
 
 .subscribeBoxWho{
@@ -221,7 +230,7 @@ input[type=text]{
 }
 
 .slides{
-  flex:50%;
+  flex: 50%;
   padding: 0 4px;
 }
 

@@ -9,6 +9,8 @@ import eventECP from '../images/events/ecp_fall_20.jpg';
 import eventECF from '../images/events/ecf_fall_20.png';
 import eventOPS from '../images/events/ops_fall_20.jpg';
 import meeting1 from '../images/events/week1_fall20.png';
+import discordIcon from '../images/discordicon.png';
+
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import Footer from '../Components/Footer';
@@ -16,6 +18,7 @@ import {SubscribeBox} from '../Components/Footer';
 import '../Styles/index.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { useHistory } from "react-router-dom";
+import IconButton from '@material-ui/core/IconButton';
 
 
 const introText = `IEEE at UC Irvine is a student organization
@@ -36,6 +39,7 @@ const images = [
     place: "1st",
     webURL: "https://kellylue.github.io/",
     index: 0,
+    color: "#ffe057",
   },
   {
     url: jackWeb,
@@ -44,6 +48,8 @@ const images = [
     place: "2nd",
     webURL: "https://jackw01.github.io/",
     index: 1,
+    color: "#1CB5E0",
+
   },
   {
     url: salWeb,
@@ -52,6 +58,7 @@ const images = [
     place: "3rd",
     webURL: "https://salvillalon45.github.io/",
     index: 2,
+    color: "#ccd8e3",
   },
 
 ];
@@ -64,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
   },
   activePlace:{
     color: "white",
+    borderLeft:"16px solid #1CB5E0",
   },
   inactivePlace:{
     color: "grey"
@@ -173,15 +181,33 @@ export default function Home() {
           <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.4vw", marginTop: '8%', marginBottom:'10%', marginLeft: '5%'}}>{introText}</Typography>
         </Box>
         <Box className = "subscribeBox">
-          <SubscribeBox/>
+          <Grid
+            container
+            direction="column"
+            justify = "space-evenly"
+            alignItems = "center"
+          >
+            <Grid item style={{width:"100%", letterSpacing:"3px", paddingTop:"5%", paddingBottom:"5%"}}>
+              <h3 style={{textAlign:"center", borderLeft:"8px solid white"}}><b>JOIN OUR COMMUNITY</b></h3>
+            </Grid>
+            <Grid item>
+              <IconButton style={{width:"16vh"}} href="https://bit.ly/IEEE-UCI_Discord" target="_blank">
+                <img style={{width:"100%", filter:"drop-shadow(4px 4px 2px rgba(33,32,40,.3))"}} src={discordIcon} alt="socialmediaicon"/>
+              </IconButton>
+            </Grid>
+            <Grid item>
+              <SubscribeBox/>
+            </Grid>
+          </Grid>
         </Box>
+
       </Box>
 
       <Box style={{marginTop: "20%"}}>
         <Box style={{paddingLeft:"15%", paddingBottom:"5%"}}>
-          <Typography variant="h5" style={{letterSpacing:"1px"}}>FALL 2020</Typography>
+          <Typography variant="h5" style={{ letterSpacing:"1px"}}>FALL 2020</Typography>
           <Box paddingTop="2%" paddingBottom="-2%">
-            <Typography variant="h4" style={{letterSpacing:"2px"}}>Upcoming Events</Typography>
+            <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Upcoming Events</Typography>
           </Box>
         </Box>
         <Carousel style={{marginLeft:"15%", width: "70%", height: "auto"}}>
@@ -241,7 +267,7 @@ export default function Home() {
       <Box style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
         <Typography variant="h5" style={{letterSpacing:"1px"}}>SPRING 2020</Typography>
         <Box paddingTop="2%" paddingBottom="-2%">
-          <Typography variant="h4" style={{letterSpacing:"2px"}}>Website Design Competition Winners</Typography>
+          <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Website Design Competition Winners</Typography>
         </Box>
       </Box>
 
@@ -294,7 +320,7 @@ export default function Home() {
         justify="space-evenly"
         alignItems="center"
       >
-      <div className={classes.root} style={{marginTop:"-50%", paddingLeft:"18%"}}>
+      <div className={classes.root} style={{marginTop:"-50%", paddingLeft:"18%", paddingTop:"5%"}}>
         {images.map((image) => (
           <Grid
             container
@@ -304,12 +330,13 @@ export default function Home() {
           >
             <Box >
               <Button
+                style={{paddingLeft:"20px", paddingRight:"20px"}}
                 onClick={() => {setPlace(image.index)}}
                 className={(websiteActive[image.index]) ?
                   classes.activePlace : classes.inactivePlace
                 }
               >
-                {image.place}<Box paddingRight="50px"/>{image.title}
+                {image.place}<Box style={{paddingRight:"50px"}}/>{image.title}
               </Button>
             </Box>
           </Grid>

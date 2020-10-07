@@ -3,20 +3,20 @@ import Header from '../Components/Header';
 import {Typography, Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
-// import WhoTitle from '../images/about_ieee.svg'
+import WhoTitle from '../images/about_ieee.svg'
 import discordIcon from '../images/discordicon.png';
 // import emailIcon from '../images/emailicon.png';
 import fbIcon from '../images/facebookicon.png';
 import igIcon from '../images/instagramicon.png';
-// import IconButton from '@material-ui/core/IconButton';
+import IconButton from '@material-ui/core/IconButton';
 import {Grid} from '@material-ui/core';
 import {SocialIcon} from '../Components/Footer';
 import {SubscribeBox} from '../Components/Footer';
-// import Popover from 'react-bootstrap/Popover';
+import Popover from 'react-bootstrap/Popover';
 // import Overlay from 'react-bootstrap/Overlay';
-// import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-// import MailOutlineIcon from '@material-ui/icons/MailOutline';
-// import { TextField } from '@material-ui/core';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import { TextField } from '@material-ui/core';
 import Carousel from 'react-bootstrap/Carousel';
 import image_zoom from '../images/who/zoom_board.png';
 import image_soldier from '../images/who/ieee_soldier.jpg'
@@ -25,9 +25,6 @@ import image2 from '../images/who/beach_logo.jpg';
 import image3 from '../images/who/old_gaming.jpg';
 import image4 from '../images/who/old_group.jpg';
 import image5 from '../images/who/alan_and_friends.jpg';
-// import eventECP from '../images/ecp_fall_20.jpg';
-// import eventECF from '../images/ecf_fall_20.png';
-// import eventOPS from '../images/ops_fall_20.jpg';
 
 
 
@@ -126,8 +123,8 @@ export default function Who() {
           container
           direction="column"
           justify="space-evenly"
-          style={{marginRight:"5%", backgroundColor:"rgb(33,32,40)", paddingLeft:"5%", borderLeft: "2px solid #0082c8"}}>
-          <Box style={{padding:"5%"}}>
+          style={{marginRight:"5%", backgroundColor:"rgb(33,32,40)", borderLeft: "2px solid #1CB5E0"}}>
+          <Box>
             <SubscribeBox/>
           </Box>
             <Grid container direction = "row" justify="space-evenly" alignItems="center">
@@ -165,7 +162,7 @@ export default function Who() {
         <Box style={{borderLeft: "24px solid #0082c8", backgroundImage: "linear-gradient(to bottom, white, #c8d6eb", marginTop: "10%", padding:"5%"}}>
             <Typography variant="h4" style={{marginTop:"5%", paddingBottom: "5%", textAlign: "center", color: "black"}}><b>Become a Member: </b></Typography>
             <ol style={{fontSize:"120%", color: "black"}}>
-              <li>Fill out our membership application here: <a href="http://bit.ly/IEEE-UCI_SignUp2020" target="_blank" rel="noopener noreferrer">http://bit.ly/IEEE-UCI_SignUp2020</a></li>
+              <li>Fill out our membership application here: <a href="http://bit.ly/IEEE-UCI_SignUp2020" target="_blank">http://bit.ly/IEEE-UCI_SignUp2020</a></li>
               <li>Send a payment of $25 to our venmo: ieee_uci with a comment including your name, uci email and Discord tag.</li>
               <li>Join our Discord community if you haven't already, and await a membership tag to be added to your name in our server.</li>
               <li>Your name will be checked on our roster when attending members-only events and accessing lab equipment. Welcome aboard!</li>

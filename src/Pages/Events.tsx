@@ -36,6 +36,8 @@ export default function Arcade() {
   return(
     <div>
       <Header/>
+      <Box className="bkgdGrad" />
+
       <Box className = "headerBox">
         <Typography variant="h6"className="title">EVENTS</Typography>
         <Typography variant="h6" className="pageTitle"></Typography>
