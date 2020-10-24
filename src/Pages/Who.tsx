@@ -158,7 +158,7 @@ export default function Who() {
           <li>Students may request an IEEE project box to store hardware for class or personal projects.</li>
           <li>Access to members-only events like our IEEE United state-wide virtual career fair</li>
         </ul>
-        <Typography>NOTE: Not being a paid member does NOT exclude you from workshops and programs such as OPS.</Typography>
+        <Typography>NOTE: Not being a paid member does NOT exclude you from programs such as OPS.</Typography>
         <Box style={{borderLeft: "24px solid #0082c8", backgroundImage: "linear-gradient(to bottom, white, #c8d6eb", marginTop: "10%", padding:"5%"}}>
             <Typography variant="h4" style={{marginTop:"5%", paddingBottom: "5%", textAlign: "center", color: "black"}}><b>Become a Member: </b></Typography>
             <ol style={{fontSize:"120%", color: "black"}}>
