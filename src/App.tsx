@@ -6,6 +6,7 @@ import Who from './Pages/Who';
 import Arcade from './Pages/Arcade';
 import Events from './Pages/Events';
 import Micromouse from './Pages/Micromouse';
+import Ops from './Pages/OpenProjectSpace';
 import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 import {CssBaseline} from '@material-ui/core';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -46,6 +47,9 @@ function App() {
             </Route>
             <Route path="/projects/arcade">
               <Arcade/>
+            </Route>
+            <Route path="/projects/ops">
+              <Ops />
             </Route>
             <Route path="/about/board">
               <Board />

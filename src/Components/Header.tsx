@@ -30,7 +30,9 @@ const AboutOptions: {name: string, url: string}[] = [
 
 const ProjectOptions: {name: string, url: string}[] = [
   {name: 'Micromouse', url: '/projects/micromouse'},
-  {name: 'Arcade Machine', url: '/projects/arcade'}
+  {name: 'Arcade Machine', url: '/projects/arcade'},
+  {name: 'Open Project Space', url: '/projects/ops'}
+
 ]
 
 
