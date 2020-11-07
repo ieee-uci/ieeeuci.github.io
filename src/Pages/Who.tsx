@@ -116,7 +116,7 @@ export default function Who() {
       </Box>
 
 
-      <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
+      <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginTop:"-35vh", marginRight: "5%"}}>
         <Typography variant="h3" style={{letterSpacing: "5px"}}>GET INVOLVED</Typography>
         <Typography style={{paddingTop:"10vh", paddingBottom:"10%"}}>{getInvolvedText}</Typography>
         <Grid
@@ -135,7 +135,7 @@ export default function Who() {
             <br/>
         </Grid>
       </Box>
-
+{/*
       <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
         <Typography variant="h3" style={{letterSpacing: "5px"}}>MEMBERSHIP</Typography>
         <Typography style={{paddingTop:"10vh", paddingBottom: "5%"}}>{membershipText}</Typography>
@@ -160,16 +160,10 @@ export default function Who() {
         </ul>
         <Typography>NOTE: Not being a paid member does NOT exclude you from programs such as OPS.</Typography>
         <Box style={{borderLeft: "24px solid #0082c8", backgroundImage: "linear-gradient(to bottom, white, #c8d6eb", marginTop: "10%", padding:"5%"}}>
-            <Typography variant="h4" style={{marginTop:"5%", paddingBottom: "5%", textAlign: "center", color: "black"}}><b>Become a Member: </b></Typography>
-            <ol style={{fontSize:"120%", color: "black"}}>
-              <li>Fill out our membership application here: <a href="http://bit.ly/IEEE-UCI_SignUp2020" target="_blank">http://bit.ly/IEEE-UCI_SignUp2020</a></li>
-              <li>Send a payment of $25 to our venmo: ieee_uci with a comment including your name, uci email and Discord tag.</li>
-              <li>Join our Discord community if you haven't already, and await a membership tag to be added to your name in our server.</li>
-              <li>Your name will be checked on our roster when attending members-only events and accessing lab equipment. Welcome aboard!</li>
-            </ol>
+            <Typography variant="h5" style={{marginTop:"5%", paddingBottom: "5%", textAlign: "center", color: "black"}}> Become a member by engaging with us on Discord! </Typography>
         </Box>
       </Box>
-
+*/}
       <Footer/>
     </div>
   );

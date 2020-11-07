@@ -192,6 +192,14 @@ input[type=text]{
 }
 
 
+.scrollButtons{
+  position: fixed;
+  top: 40%;
+  left:85%;
+  margin-right: 5%;
+  z-index: 999;
+}
+
 .socialIcon{
     width:5vw;
 }
@@ -201,7 +209,7 @@ input[type=text]{
   margin-top: 25px;
   padding: 20px;
   letter-spacing: 2px;
-  font-size: 1.2vw; 
+  font-size: 1.2vw;
   text-align: center;
   filter: drop-shadow(2px 2px 4px rgba(33,32,40,.5));
 }

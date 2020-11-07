@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
 import mainImage from '../images/hex_home.png';
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
-import eventECP from '../images/events/ecp_fall_20.jpg';
 import eventECF from '../images/events/ecf_fall_20.png';
+import eventStudy from '../images/events/studyhours_f20.png';
 import eventOPS from '../images/events/ops_fall_20.jpg';
-import meeting1 from '../images/events/week1_fall20.png';
+import announce1 from '../images/events/announce_membership_f20.png';
+
 import discordIcon from '../images/discordicon.png';
+import hexButton from '../images/ieee_diamond.svg';
 
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
@@ -142,6 +144,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
+
 function EventsButton(){
   let history = useHistory();
   const handleClick = (url: string) => {
@@ -150,8 +155,8 @@ function EventsButton(){
   return (
     <Button style={{letterSpacing:"2px"}} onClick={() => handleClick('events')}>MORE EVENTS</Button>
   )
-
 }
+
 
 
 export default function Home() {
@@ -159,7 +164,6 @@ export default function Home() {
 
   const [websiteActive, setWebsiteActive] = React.useState([true, false, false]);
   const [activeWeb, setActiveWeb] = React.useState(images[0]);
-
   const setPlace = (index: number) => {
     let temp = [false, false, false];
     temp[index] = true;
@@ -169,14 +173,16 @@ export default function Home() {
 
   return(
     <div>
-      <Header/>
+      <Header />
       <Box className="bkgdGrad" />
+      <Grid container className="scrollButtons">
+      </Grid>
       <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
         <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '7vw', left: '-1%'}}/>
         <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2.1vw', letterSpacing: '6px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)'
 }}>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</Typography>
       </Box>
-      <Box className="introBox">
+      <Box id="middle" className="introBox">
         <Box style={{position:'absolute', width: '48%', top: '0%', left: '5%'}}>
           <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.4vw", marginTop: '8%', marginBottom:'10%', marginLeft: '5%'}}>{introText}</Typography>
         </Box>
@@ -210,11 +216,11 @@ export default function Home() {
             <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Upcoming Events</Typography>
           </Box>
         </Box>
-        <Carousel style={{marginLeft:"15%", width: "70%", height: "auto"}}>
-          <Carousel.Item>
+        <Carousel pause={"hover"} style={{marginLeft:"20%", width: "60%", height: "auto"}}>
+          <Carousel.Item style = {{width:"90%", textAlign:"center", paddingLeft:"10%", paddingRight:"auto"}}>
             <img
               className="d-block w-100"
-              src={meeting1}
+              src={announce1}
               alt="1st slide"
             />
             <Carousel.Caption>
@@ -225,33 +231,20 @@ export default function Home() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={eventECP}
-              alt="2nd slide"
-            />
-            <Carousel.Caption>
-              <h3></h3>
-              <p></p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
               src={eventECF}
-              alt="3rd slide"
+              alt="career fair"
             />
-
-            <Carousel.Caption>
-              <h3></h3>
+            <Carousel.Caption style={{backgroundColor:"rgba(33,32,40,.5)"}}>
+              <h3>This event has been postponed until November. Further details will be released soon.</h3>
               <p></p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={eventOPS}
-              alt="4th slide"
+              src={eventStudy}
+              alt="Study Hours"
             />
-
             <Carousel.Caption>
               <h3></h3>
               <p></p>
