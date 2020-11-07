@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56917a9eca6ad260f05d256c0db7d712",
+    "revision": "9a2129b22b84183a1378693885c52f0c",
     "url": "/index.html"
   },
   {
-    "revision": "9b3b6a6bed3ff57343fc",
+    "revision": "b9da0f6b4097968a92a4",
     "url": "/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "38f5c67273fd335ed0dc",
-    "url": "/static/css/main.886136be.chunk.css"
+    "revision": "bfa740fb9877b494cffa",
+    "url": "/static/css/main.e2352ef7.chunk.css"
   },
   {
-    "revision": "9b3b6a6bed3ff57343fc",
-    "url": "/static/js/2.89be0a0d.chunk.js"
+    "revision": "b9da0f6b4097968a92a4",
+    "url": "/static/js/2.44b543bb.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/static/js/2.89be0a0d.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.44b543bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38f5c67273fd335ed0dc",
-    "url": "/static/js/main.4dea9d60.chunk.js"
+    "revision": "bfa740fb9877b494cffa",
+    "url": "/static/js/main.88f62827.chunk.js"
   },
   {
     "revision": "c9ca9e5254b9d2c5f1c3",
@@ -100,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alan_and_friends.d3668e07.jpg"
   },
   {
+    "revision": "21c7bacf179233e08e8a43b31ffe76b2",
+    "url": "/static/media/announce_membership_f20.21c7bacf.png"
+  },
+  {
     "revision": "8dc9231e60eb653eba584d82995bd49f",
     "url": "/static/media/beach_logo.8dc9231e.jpg"
   },
@@ -118,10 +122,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4d3588fdb68fdbde442ca4803513c74d",
     "url": "/static/media/ecf_fall_20.4d3588fd.png"
-  },
-  {
-    "revision": "e686843a06d04cca83d59690599b8848",
-    "url": "/static/media/ecp_fall_20.e686843a.jpg"
   },
   {
     "revision": "345c78976355cec3ae70a7c29c7bda5c",
@@ -224,10 +224,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/old_group.8600903a.jpg"
   },
   {
-    "revision": "6d0ffac617b59009da4652f507cf355e",
-    "url": "/static/media/ops_fall_20.6d0ffac6.jpg"
-  },
-  {
     "revision": "a0fc7dc3a679d53e296b95135954c41b",
     "url": "/static/media/pcb-design-1.a0fc7dc3.jpg"
   },
@@ -264,6 +260,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/soldering3.73aabf3a.jpg"
   },
   {
+    "revision": "96669777971488b000c875763ae13106",
+    "url": "/static/media/studyhours_f20.96669777.png"
+  },
+  {
     "revision": "a0a8f3dfca83b297f1089ebc0369d255",
     "url": "/static/media/ti_workshop1.a0a8f3df.jpg"
   },
@@ -282,10 +282,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9a50d6cd1f9c7fab72e3be9d872b89ea",
     "url": "/static/media/valen.9a50d6cd.png"
-  },
-  {
-    "revision": "d554e5aa187a33b85687c84c545a93ca",
-    "url": "/static/media/week1_fall20.d554e5aa.png"
   },
   {
     "revision": "fffd334beb205e790fc31aac10d76d99",
