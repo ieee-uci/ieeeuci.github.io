@@ -5,7 +5,7 @@ import mainImage from '../images/hex_home.png';
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
-import eventECF from '../images/events/ecf_fall_20.png';
+import strava from '../images/events/strava.png';
 import eventStudy from '../images/events/studyhours_f20.png';
 import eventOPS from '../images/events/ops_fall_20.jpg';
 import announce1 from '../images/events/announce_membership_f20.png';
@@ -231,11 +231,12 @@ export default function Home() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={eventECF}
-              alt="career fair"
+              src={strava}
+              alt="strava"
             />
             <Carousel.Caption style={{backgroundColor:"rgba(33,32,40,.5)"}}>
-              <h3>This event has been postponed until November. Further details will be released soon.</h3>
+              <h3>Do you enjoy running, swimming, and staying fit? Connect with us on Strava!</h3>
+              <h3><a href="https://www.strava.com/clubs/uciieee"> Join Here! </a></h3>
               <p></p>
             </Carousel.Caption>
           </Carousel.Item>
