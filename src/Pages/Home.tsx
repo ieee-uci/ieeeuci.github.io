@@ -216,45 +216,60 @@ export default function Home() {
             <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Upcoming Events</Typography>
           </Box>
         </Box>
-        <Carousel pause={"hover"} style={{marginLeft:"20%", width: "60%", height: "auto"}}>
-          <Carousel.Item style = {{width:"90%", textAlign:"center", paddingLeft:"10%", paddingRight:"auto"}}>
-            <img
-              className="d-block w-100"
-              src={announce1}
-              alt="1st slide"
-            />
-            <Carousel.Caption>
-              <h3></h3>
-              <p></p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={strava}
-              alt="strava"
-            />
-            <Carousel.Caption style={{backgroundColor:"rgba(33,32,40,.5)"}}>
-              <h3>Do you enjoy running, swimming, and staying fit? Connect with us on Strava!</h3>
-              <h3><a href="https://www.strava.com/clubs/uciieee"> Join Here! </a></h3>
-              <p></p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={eventStudy}
-              alt="Study Hours"
-            />
-            <Carousel.Caption>
-              <h3></h3>
-              <p></p>
-            </Carousel.Caption>
-          </Carousel.Item>
-      </Carousel>
-        <Box style={{marginTop: "5%", textAlign: "right", marginRight: "15%"}}>
-          <EventsButton/>
-        </Box>
+        <Grid container direction="row" justify="space-around" alignItems="flex-start">
+          <Grid container item sm={7}>
+            <Carousel pause={"hover"} style={{marginLeft:"5%", width: "90%", height: "auto"}}>
+              <Carousel.Item style = {{width:"90%", textAlign:"center", paddingLeft:"10%", paddingRight:"auto"}}>
+                <img
+                  className="d-block w-100"
+                  src={announce1}
+                  alt="1st slide"
+                />
+                <Carousel.Caption>
+                  <h3></h3>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={strava}
+                  alt="strava"
+                />
+                <Carousel.Caption style={{backgroundColor:"rgba(33,32,40,.5)"}}>
+                  <h4>Do you enjoy running, swimming, and staying fit? Connect with us on Strava!</h4>
+                  <h4><a href="https://www.strava.com/clubs/uciieee"> Join Here! </a></h4>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={eventStudy}
+                  alt="Study Hours"
+                />
+                <Carousel.Caption>
+                  <h3></h3>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+          </Carousel>
+        </Grid>
+        <Grid
+          container item
+          sm = {4}
+          justify="flex-end"
+          style={{marginLeft:"7%"}}
+        >
+          <Box paddingTop="0%" paddingRight="10%">
+            <iframe title="calendar" className="calendar" src="https://calendar.google.com/calendar/b/4/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=aWVlZS51Y2lydmluZUBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cmo3OTk4aWZwZjNvMDAyMnR1N2dlZzVsaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dWNpY2x1YmFmZmlsaWF0ZXNAZ21haWwuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bmV1aHR2NjVqNDNhOWZiZXVkbTE2MTFvbWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aDFuMW83czllODExMnNzODBiZWFiaG5nOTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23039BE5&amp;color=%237986CB&amp;color=%230B8043&amp;color=%23E4C441&amp;color=%23009688&amp;color=%23D50000&amp;color=%23E67C73&amp;mode=AGENDA" width="500" height="550" scrolling="no"></iframe>
+            <Box style={{marginTop: "5%", textAlign: "right", marginRight: "15%"}}>
+              <EventsButton/>
+            </Box>
+          </Box>
+        </Grid>
+      </Grid>
+
       </Box>
 
 
