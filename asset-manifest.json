@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e2352ef7.chunk.css",
-    "main.js": "/static/js/main.88f62827.chunk.js",
-    "main.js.map": "/static/js/main.88f62827.chunk.js.map",
+    "main.js": "/static/js/main.3b276716.chunk.js",
+    "main.js.map": "/static/js/main.3b276716.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4dbf4889.js",
     "runtime-main.js.map": "/static/js/runtime-main.4dbf4889.js.map",
     "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
     "static/js/2.44b543bb.chunk.js": "/static/js/2.44b543bb.chunk.js",
     "static/js/2.44b543bb.chunk.js.map": "/static/js/2.44b543bb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.476410b6c203d92139692795cfbb0a21.js": "/precache-manifest.476410b6c203d92139692795cfbb0a21.js",
+    "precache-manifest.4c80ab455c3de2519a2e13e00b4ae1ea.js": "/precache-manifest.4c80ab455c3de2519a2e13e00b4ae1ea.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
     "static/css/main.e2352ef7.chunk.css.map": "/static/css/main.e2352ef7.chunk.css.map",
@@ -37,7 +37,6 @@
     "static/media/boba_night1.jpg": "/static/media/boba_night1.35da36cc.jpg",
     "static/media/boba_night2.jpg": "/static/media/boba_night2.197dcde7.jpg",
     "static/media/boba_night3.jpg": "/static/media/boba_night3.45a64e3c.jpg",
-    "static/media/ecf_fall_20.png": "/static/media/ecf_fall_20.4d3588fd.png",
     "static/media/eit-workshop1.jpg": "/static/media/eit-workshop1.345c7897.jpg",
     "static/media/emailicon.png": "/static/media/emailicon.99a7e17b.png",
     "static/media/facebookicon.png": "/static/media/facebookicon.1ffaab25.png",
@@ -72,6 +71,7 @@
     "static/media/soldering1.jpg": "/static/media/soldering1.219336c1.jpg",
     "static/media/soldering2.jpg": "/static/media/soldering2.074e0a37.jpg",
     "static/media/soldering3.jpg": "/static/media/soldering3.73aabf3a.jpg",
+    "static/media/strava.png": "/static/media/strava.63184600.png",
     "static/media/studyhours_f20.png": "/static/media/studyhours_f20.96669777.png",
     "static/media/ti_workshop1.jpg": "/static/media/ti_workshop1.a0a8f3df.jpg",
     "static/media/ti_workshop2.jpg": "/static/media/ti_workshop2.7195e589.jpg",
@@ -88,6 +88,6 @@
     "static/css/2.11829350.chunk.css",
     "static/js/2.44b543bb.chunk.js",
     "static/css/main.e2352ef7.chunk.css",
-    "static/js/main.88f62827.chunk.js"
+    "static/js/main.3b276716.chunk.js"
   ]
 }

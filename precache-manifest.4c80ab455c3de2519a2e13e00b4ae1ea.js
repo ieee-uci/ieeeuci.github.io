@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a2129b22b84183a1378693885c52f0c",
+    "revision": "d7420732ac9180728843f44a94e12a9e",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "bfa740fb9877b494cffa",
+    "revision": "f0de44c4015421a8fe7f",
     "url": "/static/css/main.e2352ef7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.44b543bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bfa740fb9877b494cffa",
-    "url": "/static/js/main.88f62827.chunk.js"
+    "revision": "f0de44c4015421a8fe7f",
+    "url": "/static/js/main.3b276716.chunk.js"
   },
   {
     "revision": "c9ca9e5254b9d2c5f1c3",
@@ -118,10 +118,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "45a64e3cf5af380f844f705f01f7ca34",
     "url": "/static/media/boba_night3.45a64e3c.jpg"
-  },
-  {
-    "revision": "4d3588fdb68fdbde442ca4803513c74d",
-    "url": "/static/media/ecf_fall_20.4d3588fd.png"
   },
   {
     "revision": "345c78976355cec3ae70a7c29c7bda5c",
@@ -258,6 +254,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "73aabf3ac8b31dbb9e4ae67780b3a300",
     "url": "/static/media/soldering3.73aabf3a.jpg"
+  },
+  {
+    "revision": "631846009f13187224ce5a3f34837c9e",
+    "url": "/static/media/strava.63184600.png"
   },
   {
     "revision": "96669777971488b000c875763ae13106",
