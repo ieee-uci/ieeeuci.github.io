@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
-
+html{
+  scroll-behavior: smooth;
+}
 .bkgdGrad{
   z-index: -99;
   position: fixed;
@@ -195,9 +197,27 @@ input[type=text]{
 .scrollButtons{
   position: fixed;
   top: 40%;
-  left:85%;
+  left:95%;
   margin-right: 5%;
   z-index: 999;
+}
+
+.scrollButtons a {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.scrollButtons a:hover {
+  opacity: .5;
+}
+
+.scrollDot{
+  filter: opacity(.5);
 }
 
 .socialIcon{

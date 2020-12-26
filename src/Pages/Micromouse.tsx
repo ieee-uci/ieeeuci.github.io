@@ -60,9 +60,9 @@ export default function Micromouse() {
         <Grid container item sm={12} direction="column" alignItems="center" style={{marginTop:"5%", marginBottom:"10%"}}>
           <Typography variant="h3" style={{marginBottom:"2%", letterSpacing:"4px",  textAlign:"center"}}>get involved</Typography>
           <br/>
-          <Grid container item justify="space-evenly" style={{width:"40%", padding:"2%", borderRadius:"%"}}>
-            <IconButton href="https://www.facebook.com/groups/153805515376853" target="_blank"><img style={{width:"8vw", backgroundImage:"linear-gradient(to right, #1CB5E0, #2A6AC6)", padding:"15%", borderRadius:"30%"}} src={fbIcon}/></IconButton>
-            <IconButton href="https://github.com/micromouseuci/UCI-Micromouse" target="_blank"><img style={{width:"8vw", backgroundImage:"linear-gradient(to right, #1CB5E0, #2A6AC6)", padding:"15%", borderRadius:"30%"}} src={githubIcon}/></IconButton>
+          <Grid container item justify="space-evenly" style={{width:"40%", padding:"2%", borderRadius:"%"}} sm={4}>
+            <IconButton href="https://www.facebook.com/groups/153805515376853" target="_blank"><img style={{width:"6vw", backgroundImage:"linear-gradient(to right, #1CB5E0, #2A6AC6)", padding:"15%", borderRadius:"10%"}} src={fbIcon}/></IconButton>
+            <IconButton href="https://github.com/micromouseuci/UCI-Micromouse" target="_blank"><img style={{width:"6vw", backgroundImage:"linear-gradient(to right, #1CB5E0, #2A6AC6)", padding:"15%", borderRadius:"10%"}} src={githubIcon}/></IconButton>
           </Grid>
         </Grid>
       </Grid>

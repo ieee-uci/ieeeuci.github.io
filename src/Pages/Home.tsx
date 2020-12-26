@@ -33,6 +33,7 @@ dedicated to helping students become the succesful engineers they envision
 themselves to be so that they can advance technology for humanity in
 their own passion.`;
 
+
 const images = [
   {
     url: kellyWeb,
@@ -145,6 +146,24 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
+export function Hexagon() {
+  return(
+  <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className = "scrollDot"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6 15.2348L12 18.5681L18 15.2348V8.76521L12 5.43188L6 8.76521V15.2348ZM12 2L3 7V17L12 22L21 17V7L12 2Z"
+    fill="currentColor"
+  />
+</svg>)
+  }
 
 
 function EventsButton(){
@@ -172,17 +191,33 @@ export default function Home() {
   };
 
   return(
-    <div>
+    <div id="section01" >
       <Header />
       <Box className="bkgdGrad" />
-      <Grid container className="scrollButtons">
+      <Grid container className="scrollButtons"
+        direction="column"
+        justify="space-evenly"
+        spacing = {2}>
+
+        <Grid container item>
+          <a href="#section01"><Hexagon/></a>
+        </Grid>
+        <Grid container item>
+          <a href="#section02"><Hexagon/></a>
+        </Grid>
+        <Grid container item>
+          <a href="#section03"><Hexagon/></a>
+        </Grid>
+        <Grid container item>
+          <a href="#section04"><Hexagon/></a>
+        </Grid>
       </Grid>
       <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
-        <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '7vw', left: '-1%'}}/>
+        <img src={mainImage}  className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '7vw', left: '-1%'}}/>
         <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2.1vw', letterSpacing: '6px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)'
 }}>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</Typography>
       </Box>
-      <Box id="middle" className="introBox">
+      <Box id="section02" className="introBox">
         <Box style={{position:'absolute', width: '48%', top: '0%', left: '5%'}}>
           <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.4vw", marginTop: '8%', marginBottom:'10%', marginLeft: '5%'}}>{introText}</Typography>
         </Box>
@@ -210,7 +245,7 @@ export default function Home() {
       </Box>
 
       <Box style={{marginTop: "20%"}}>
-        <Box style={{paddingLeft:"15%", paddingBottom:"5%"}}>
+        <Box id="section03" style={{paddingLeft:"15%", paddingBottom:"5%"}}>
           <Typography variant="h5" style={{ letterSpacing:"1px"}}>FALL 2020</Typography>
           <Box paddingTop="2%" paddingBottom="-2%">
             <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Upcoming Events</Typography>
@@ -273,7 +308,7 @@ export default function Home() {
       </Box>
 
 
-      <Box style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
+      <Box id="section04" style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
         <Typography variant="h5" style={{letterSpacing:"1px"}}>SPRING 2020</Typography>
         <Box paddingTop="2%" paddingBottom="-2%">
           <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Website Design Competition Winners</Typography>
