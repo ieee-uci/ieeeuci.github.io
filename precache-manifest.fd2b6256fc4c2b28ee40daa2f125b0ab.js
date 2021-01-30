@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cac15a127810f9f347936cfab40fe8f8",
+    "revision": "0e4ec5ca8080f08ea64f2701c8c7c2f6",
     "url": "/index.html"
   },
   {
-    "revision": "b9da0f6b4097968a92a4",
-    "url": "/static/css/2.11829350.chunk.css"
+    "revision": "57dc5793f1b50d20bb0c",
+    "url": "/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "225450c59e3792c2096d",
+    "revision": "103b1ed854710b98dca7",
     "url": "/static/css/main.62cfd20e.chunk.css"
   },
   {
-    "revision": "b9da0f6b4097968a92a4",
-    "url": "/static/js/2.44b543bb.chunk.js"
+    "revision": "57dc5793f1b50d20bb0c",
+    "url": "/static/js/2.e306b75c.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/static/js/2.44b543bb.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e306b75c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "225450c59e3792c2096d",
-    "url": "/static/js/main.f9463e5e.chunk.js"
+    "revision": "103b1ed854710b98dca7",
+    "url": "/static/js/main.84f4db1b.chunk.js"
   },
   {
-    "revision": "c9ca9e5254b9d2c5f1c3",
-    "url": "/static/js/runtime-main.4dbf4889.js"
+    "revision": "53057e75827ec9ca90f1",
+    "url": "/static/js/runtime-main.7806acba.js"
   },
   {
     "revision": "728ec8f2bde53080f810fc0972d0c14d",
@@ -100,10 +100,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alan_and_friends.d3668e07.jpg"
   },
   {
-    "revision": "21c7bacf179233e08e8a43b31ffe76b2",
-    "url": "/static/media/announce_membership_f20.21c7bacf.png"
-  },
-  {
     "revision": "8dc9231e60eb653eba584d82995bd49f",
     "url": "/static/media/beach_logo.8dc9231e.jpg"
   },
@@ -126,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99a7e17bb0279774b7de124ca794cac2",
     "url": "/static/media/emailicon.99a7e17b.png"
+  },
+  {
+    "revision": "1d871df75abb5e6df00530e44a5813a8",
+    "url": "/static/media/events_ng.1d871df7.jpg"
   },
   {
     "revision": "1ffaab251c9457d376d651511de3a246",
@@ -258,10 +258,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "631846009f13187224ce5a3f34837c9e",
     "url": "/static/media/strava.63184600.png"
-  },
-  {
-    "revision": "96669777971488b000c875763ae13106",
-    "url": "/static/media/studyhours_f20.96669777.png"
   },
   {
     "revision": "a0a8f3dfca83b297f1089ebc0369d255",
