@@ -31,7 +31,7 @@ export default function Ops() {
           <br/>
           <Typography>Although the school year may be remote, this doesn't stop us from providing an immersive educational environment. <br/> If accepted into the OPS program, a kit including all the necessary project materials will be shipped to you. You will also be able to interact with other students remotely and build a community of rising engineers!</Typography>
           <Box style = {{color:"black", backgroundImage: "linear-gradient(to bottom, white, #c8d6eb)", padding:"2%", marginTop:"10%", marginLeft:"10%", marginRight:"10%", textAlign:"center"}}>
-            <h4>OPS Applications are now closed for Fall 2020. <br/> Thank you to everyone who applied!</h4>
+            <h4>OPS will resume in Fall 2021. <br/> Thank you to everyone who's been a part of it so far!</h4>
           </Box>
           <Box style = {{backgroundColor:"rgb(33,32,40)", padding:"2% 12%", marginTop:"10%", marginLeft:"10%", marginRight:"10%", textAlign:"center"}}>
             <h3 style={{letterSpacing:"2px", paddingBottom:"5%"}}> Resources </h3>

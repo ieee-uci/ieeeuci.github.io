@@ -6,6 +6,7 @@ import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
 import strava from '../images/events/strava.png';
+import eventsNG from '../images/events_ng.jpg'
 import eventStudy from '../images/events/studyhours_f20.png';
 import eventOPS from '../images/events/ops_fall_20.jpg';
 import announce1 from '../images/events/announce_membership_f20.png';
@@ -21,6 +22,12 @@ import '../Styles/index.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { useHistory } from "react-router-dom";
 import IconButton from '@material-ui/core/IconButton';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MuiAccordion from '@material-ui/core/Accordion';
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
+import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
+
+import { withStyles } from '@material-ui/core/styles';
 
 
 const introText = `IEEE at UC Irvine is a student organization
@@ -145,6 +152,25 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const Accordion = withStyles({
+    root: {
+        backgroundColor: '#2A6AC6'
+    }
+})(MuiAccordion);
+
+const AccordionSummary = withStyles({
+    root: {
+        color: 'white'
+
+    }
+})(MuiAccordionSummary);
+
+const AccordionDetails = withStyles({
+    root: {
+        backgroundColor: 'rgba(33, 32, 40, .5)', 
+        color: 'white' 
+    }
+})(MuiAccordionDetails);
 
 export function Hexagon() {
   return(
@@ -188,7 +214,9 @@ export default function Home() {
     temp[index] = true;
     setWebsiteActive(temp);
     setActiveWeb(images[index]);
-  };
+    };
+
+ 
 
   return(
     <div id="section01" >
@@ -244,52 +272,70 @@ export default function Home() {
 
       </Box>
 
-      <Box style={{marginTop: "20%"}}>
-        <Box id="section03" style={{paddingLeft:"15%", paddingBottom:"5%"}}>
+      <Box style={{marginTop: "10%", paddingLeft: "5%"}}>
+        <Box id="section03" style={{paddingLeft:"10%", paddingBottom:"0%"}}>
           <Typography variant="h5" style={{ letterSpacing:"1px"}}>FALL 2020</Typography>
           <Box paddingTop="2%" paddingBottom="-2%">
             <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Upcoming Events</Typography>
-          </Box>
         </Box>
-        <Grid container direction="row" justify="space-around" alignItems="flex-start">
-          <Grid container item sm={7}>
-            <Carousel pause={"hover"} style={{marginLeft:"5%", width: "90%", height: "auto"}}>
-              <Carousel.Item style = {{width:"90%", textAlign:"center", paddingLeft:"10%", paddingRight:"auto"}}>
-                <img
-                  className="d-block w-100"
-                  src={announce1}
-                  alt="1st slide"
-                />
-                <Carousel.Caption>
-                  <h3></h3>
-                  <p></p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={strava}
-                  alt="strava"
-                />
-                <Carousel.Caption style={{backgroundColor:"rgba(33,32,40,.5)"}}>
-                  <h4>Do you enjoy running, swimming, and staying fit? Connect with us on Strava!</h4>
-                  <h4><a href="https://www.strava.com/clubs/uciieee"> Join Here! </a></h4>
-                  <p></p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={eventStudy}
-                  alt="Study Hours"
-                />
-                <Carousel.Caption>
-                  <h3></h3>
-                  <p></p>
-                </Carousel.Caption>
-              </Carousel.Item>
-          </Carousel>
-        </Grid>
+        </Box>
+              <Grid container direction="row" justify="space-between" alignItems="center"
+                  style={{ width: "90%", textAlign: "center", paddingLeft: "10%", paddingRight: "auto" }}>
+                  <Grid container item sm={7} justify = "space-between" >
+                      <Grid item md={10}>
+                           <Carousel pause={"hover"} style={{ marginBottom: "5%", width: "90%", height: "auto" }}>
+                              <Carousel.Item >
+                                <img className="d-block w-100" src={eventsNG} alt="1st slide" />
+                                  <Carousel.Caption >
+                                      <p style={{ fontSize: "14px" }}>Check out our upcoming events with global defense tehnology company Northrop Grumman!</p>
+                                </Carousel.Caption>
+                              </Carousel.Item>
+                              <Carousel.Item style={{ width: "90%", textAlign: "center", paddingLeft: "10%", paddingRight: "auto" }}> <img className="d-block w-100" src={strava} alt="strava"/>
+                                <Carousel.Caption style={{backgroundColor:"rgba(33,32,40,.5)"}}>
+                                  <p>Do you enjoy running, biking, or just staying fit? Connect with us on Strava!</p>
+                                  <p><a href="https://www.strava.com/clubs/uciieee"> Join Here! </a></p>
+                                </Carousel.Caption>
+                              </Carousel.Item>
+                          </Carousel>
+                      </Grid>
+                      <Grid item style={{width: 'auto', height: "auto" }}>
+                          <Accordion >
+                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                  <Typography variant="h5" >Week 5 Biweekly General Meeting</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                  <ul> <li> Date: February 2, 2021 </li>
+                                      <li> Time: 6:20-7:00PM </li>
+                                      <li > <a href="https://www.facebook.com/events/756390375256686"> More Info </a> </li>
+
+                                  </ul>
+
+                              </AccordionDetails>
+                          </Accordion>
+                          <Accordion>
+                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                  <Typography variant="h5">Northrop Grumman Electronics and Payloads Panel</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                  <li > Date: February 11, 2021 </li>
+                                  <li > <a href="https://www.strava.com/clubs/uciieee"> Sign Up </a> </li>
+
+                              </AccordionDetails>
+                          </Accordion>
+                          <Accordion>
+                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                  <Typography variant="h5" >Northrop Grumman Resume Session</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                <Typography variant="h6" >
+                                    Date: February 25, 2021 
+                                </Typography>
+                              </AccordionDetails>
+                          </Accordion>
+                      </Grid>  
+
+              
+            </Grid>
         <Grid
           container item
           sm = {4}
@@ -308,7 +354,7 @@ export default function Home() {
       </Box>
 
 
-      <Box id="section04" style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
+      <Box id="section04" style={{position:"relative", marginTop: "10%", paddingLeft:"15%", paddingBottom:"10%"}}>
         <Typography variant="h5" style={{letterSpacing:"1px"}}>SPRING 2020</Typography>
         <Box paddingTop="2%" paddingBottom="-2%">
           <Typography variant="h4" style={{paddingLeft:"5%", borderLeft: "8px solid white", letterSpacing:"2px"}}>Website Design Competition Winners</Typography>
